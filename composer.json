@@ -1,5 +1,5 @@
 {
-    "name": "yadahan/laravel-authentication-log",
+    "name": "anwarelbo/laravel-authentication-log",
     "description": "Laravel Authentication Log provides authentication logger and notification for Laravel.",
     "keywords": [
         "laravel",
@@ -10,8 +10,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Yaakov Dahan",
-            "email": "yakidehan@gmail.com"
+            "name": "Anwar el Bouhdifi",
+            "email": "anwar.elbouhdifi@gmail.com"
         }
     ],
     "require": {

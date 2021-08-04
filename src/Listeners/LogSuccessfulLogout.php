@@ -39,12 +39,14 @@ class LogSuccessfulLogout
             $user = $event->user;
             $ip = $this->request->ip();
             $userAgent = $this->request->userAgent();
+            $reasonId = $this->request->get('logout_reason_id');
             $authenticationLog = $user->authentications()->whereIpAddress($ip)->whereUserAgent($userAgent)->first();
 
             if (! $authenticationLog) {
                 $authenticationLog = new AuthenticationLog([
                     'ip_address' => $ip,
                     'user_agent' => $userAgent,
+                    'logout_reason_id' => $reasonId
                 ]);
             }
 
